@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "standalone",
+  images: {
+    unoptimized: true, // Often safer for simple VPS deployments without external image optimization services
+  }
 };
 
 export default nextConfig;
